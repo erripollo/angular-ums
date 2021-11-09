@@ -7,8 +7,8 @@ import { User } from "../interfaces/user";
 export class UserService {
   users: User[] = [
     {
-      name: 'Hidran1',
-      lastname: 'Arias',
+      name: 'Roberto',
+      lastname: 'Rossi',
       email: 'hidran@gmail.com',
       fiscalcode: 'RSAHRN72M22Z444S',
       province: 'Torino',
@@ -16,8 +16,8 @@ export class UserService {
       age: 43
     },
     {
-      name: 'Hidran2',
-      lastname: 'Arias',
+      name: 'Federico',
+      lastname: 'Ferrari',
       email: 'hidran@gmail.com',
       fiscalcode: 'RSAHRN72M22Z444S',
       province: 'Torino',
@@ -25,8 +25,8 @@ export class UserService {
       age: 43
     },
     {
-      name: 'Hidran3',
-      lastname: 'Arias',
+      name: 'Andrea',
+      lastname: 'Bianchi',
       email: 'hidran@gmail.com',
       fiscalcode: 'RSAHRN72M22Z444S',
       province: 'Torino',
@@ -34,8 +34,8 @@ export class UserService {
       age: 43
     },
     {
-      name: 'Hidran4',
-      lastname: 'Arias',
+      name: 'Giovanni',
+      lastname: 'Russo',
       email: 'hidran@gmail.com',
       fiscalcode: 'RSAHRN72M22Z444S',
       province: 'Torino',
