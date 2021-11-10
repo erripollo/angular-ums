@@ -1,10 +1,16 @@
-.btn-save{
-    background-color: green;
+.btn-save,
+.btn-reset{
     color: #fff;
     font-weight: bold;
     padding: 5px;
     width: 80px;
     margin-right: 10px;
+}
+.btn-save{
+    background-color: green;
+}
+.btn-reset{
+    background-color: orange;
 }
 
 .form-footer{

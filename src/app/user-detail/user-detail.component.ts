@@ -1,4 +1,5 @@
-import { User } from './../classes/user';
+import { UserService } from './../services/user.service';
+import { User } from '../classes/User';
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
@@ -8,13 +9,26 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class UserDetailComponent implements OnInit {
   @Input() user!: User
-  constructor() { }
+  
+  constructor(private userService: UserService) {}
 
   ngOnInit(): void {
   }
 
   saveUser(){
-    alert(this.user.id)
+    if(this.user.id > 0){
+      this.userService.updateUser(this.user);
+    }else{
+      this.userService.createUser(this.user);
+    }
+  }
+
+  resetForm(form: any){
+    if(this.user.id === 0){
+      this.user = new User();
+    }else{
+      form.reset();
+    }
   }
 
 }

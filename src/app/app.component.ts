@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { User } from './classes/user';
+import { User } from './classes/User';
 
 
 @Component({
@@ -15,5 +15,14 @@ export class AppComponent {
   updateUser(user: User){
     this.showForm = true;
     this.userSelected = user;
+  }
+
+  newUser(){
+    this.userSelected = new User();
+    if(this.showForm === true){
+      this.showForm = false;
+    }else{
+      this.showForm = true;
+    }
   }
 }

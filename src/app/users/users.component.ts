@@ -1,6 +1,6 @@
 import { UserService } from '../services/user.service';
 import { Component, EventEmitter, OnInit, Output } from "@angular/core";
-import { User } from '../classes/user';
+import { User } from '../classes/User';
 
 @Component({
     selector: 'app-users',
