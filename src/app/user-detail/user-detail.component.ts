@@ -1,4 +1,4 @@
-import { User } from './../interfaces/user';
+import { User } from './../classes/user';
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
@@ -11,6 +11,10 @@ export class UserDetailComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  saveUser(){
+    alert(this.user.id)
   }
 
 }

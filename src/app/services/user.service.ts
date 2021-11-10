@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { User } from "../interfaces/user";
+import { User } from "../classes/user";
 
 @Injectable({
     providedIn: 'root'
@@ -7,40 +7,44 @@ import { User } from "../interfaces/user";
 export class UserService {
   users: User[] = [
     {
+      id: 1,
       name: 'Roberto',
       lastname: 'Rossi',
-      email: 'hidran@gmail.com',
+      email: 'rossi@example.com',
       fiscalcode: 'RSAHRN72M22Z444S',
       province: 'Torino',
-      phone: '454545455',
-      age: 43
+      phone: '3345665423',
+      age: 30
     },
     {
+      id: 2,
       name: 'Federico',
       lastname: 'Ferrari',
-      email: 'hidran@gmail.com',
+      email: 'ferrari@example.com',
       fiscalcode: 'RSAHRN72M22Z444S',
       province: 'Torino',
-      phone: '454545455',
-      age: 43
+      phone: '3374885923',
+      age: 34
     },
     {
+      id: 3,
       name: 'Andrea',
       lastname: 'Bianchi',
-      email: 'hidran@gmail.com',
+      email: 'bianchi@example.com',
       fiscalcode: 'RSAHRN72M22Z444S',
       province: 'Torino',
-      phone: '454545455',
-      age: 43
+      phone: '3249884651',
+      age: 29
     },
     {
+      id: 4,
       name: 'Giovanni',
       lastname: 'Russo',
-      email: 'hidran@gmail.com',
+      email: 'russo@example.com',
       fiscalcode: 'RSAHRN72M22Z444S',
       province: 'Torino',
-      phone: '454545455',
-      age: 43
+      phone: '3350992875',
+      age: 40
     }
   ];
 
